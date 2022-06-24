@@ -447,7 +447,7 @@ app.get('/api/:state', (req,res)=>{
     if(NigeriaStates[stateName]){
         res.json(NigeriaStates[stateName])
     }else{
-        console.log("Enter the correct State")
+       console.log('Enter the state correct')
     }
 })
 
