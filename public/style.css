@@ -16,7 +16,17 @@ p{
     line-height: 1.8rem;
     font-size: 1.1rem;
 }
-
+span{
+    color: green;
+}
+span:hover{
+    color: brown;
+}
+hr{
+    margin-block: 1rem;
+    width: 70%;
+    margin-left: 15%;
+}
 
 @media screen and (max-width:427px) {
     body{
