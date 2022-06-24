@@ -6,6 +6,7 @@ const PORT = 5000
 
 app.use(cors())
 
+app.use(express.static('public'))
 const NigeriaStates = {
     "abia state":{
         'Capital':'Umauahia',
@@ -440,6 +441,10 @@ const NigeriaStates = {
 
 app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/index.html')
+})
+
+app.get('/api',(req,res)=>{
+    res.json(NigeriaStates)
 })
 
 app.get('/api/:state', (req,res)=>{
